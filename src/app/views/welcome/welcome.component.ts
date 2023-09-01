@@ -4,14 +4,13 @@ interface SideNavToggle {
   screenWidth: number;
   collapsed: boolean;
 }
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.scss']
 })
-export class AppComponent {
-  title = 'fishnet';
+export class WelcomeComponent {
+  title = 'FishNet';
 
   isSideNavCollapsed = false;
   screenWidth = 0;
