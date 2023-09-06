@@ -1,1 +1,25 @@
-<p>unidadp works!</p>
+<div class="container">
+  <div class="form-group"></div>
+  <table id="dataTable" class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Area</th>
+        <th>Código</th>
+        <th>Coordenada</th>
+        <th>Observaciones</th>
+        <th>Profundidad</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let unidad of unidadp">
+        <td>{{ unidad.id }}</td>
+        <td>{{ unidad.area }}</td>
+        <td>{{ unidad.codigo }}</td>
+        <td>{{ unidad.coordenadas }}</td>
+        <td>{{ unidad.observaciones }}</td>
+        <td>{{ unidad.profundidad }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
